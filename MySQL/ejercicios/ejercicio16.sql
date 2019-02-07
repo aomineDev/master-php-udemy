@@ -1,0 +1,3 @@
+/*Obtener listado de clientes atendidos por el vendedor 'Davidad lopez'*/
+SELECT CONCAT(v.nombre, ' ', v.apellidos) AS 'vendedor', c.nombre AS 'cliente' from vendedores v INNER JOIN clientes c ON v.idvendedores = c.idvendedores WHERE CONCAT(v.nombre, ' ', v.apellidos) = 'David Lopez';
+SELECT * FROM clientes WHERE idvendedores IN(SELECT idvendedores FROM vendedores WHERE nombre = 'David' AND apellidos = 'Lopez');

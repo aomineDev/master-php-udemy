@@ -1,0 +1,2 @@
+/*Listar todos los encargos realizados con la marca del coche y el nombre del cliente*/
+SELECT e.idencargos, cl.nombre, co.modelo, e.cantidad, e.fecha  FROM encargos e INNER JOIN coches co ON e.idcoches = co.idcoches INNER JOIN clientes cl ON e.idclientes = cl.idclientes;

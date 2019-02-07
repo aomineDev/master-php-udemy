@@ -1,0 +1,2 @@
+/*Mostrar listado de clientes (numero de cliente y el nombre) mostrar tambien el numero de vendedor y su nombre*/
+SELECT c.idclientes, c.nombre, v.idvendedores, CONCAT(v.nombre, ' ', v.apellidos) AS 'vendedor' FROM clientes c INNER JOIN vendedores v ON c.idvendedores = v.idvendedores;

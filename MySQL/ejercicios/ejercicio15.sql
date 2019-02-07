@@ -1,0 +1,2 @@
+/*Mostrar los clientes que mas pedidos han hecho y mostrar cuantos hicieron*/
+SELECT c.nombre, COUNT(e.idclientes) AS 'pedidos realizados' FROM encargos e INNER JOIN clientes c ON e.idclientes = c.idclientes GROUP BY e.idclientes ORDER BY 2 DESC LIMIT 2;

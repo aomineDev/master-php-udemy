@@ -1,0 +1,2 @@
+/*Mostrar los apellidos de los vendedores, su fecha y su numero de grupo ordenando por fecha descendente, mostrar los 4 ultimos registrados*/
+SELECT apellidos, fecha_alta, idgrupos FROM vendedores ORDER BY fecha_alta DESC LIMIT 4;

@@ -1,0 +1,2 @@
+/*Sacar la media de sueldos entre todos los vendedores por grupo*/
+SELECT ROUND(avg(v.sueldo)) AS 'media de sueldo', g.nombre, g.ciudad FROM vendedores v INNER JOIN grupos g ON v.idgrupos = g.idgrupos GROUP BY v.idgrupos ORDER BY avg(v.sueldo) DESC;

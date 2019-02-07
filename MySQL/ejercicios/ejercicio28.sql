@@ -1,0 +1,2 @@
+/*Mostrar todos los vendedores y el numero de clientes se debe mostrar tengo o no clietnes*/
+SELECT v.idvendedores, CONCAT(v.nombre, ' ', v.apellidos) AS 'Vendedores', COUNT(c.idvendedores) AS 'n° clientes' FROM vendedores v LEFT JOIN clientes c ON v.idvendedores = c.idvendedores GROUP BY 1;

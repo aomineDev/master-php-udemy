@@ -1,0 +1,2 @@
+	/*Listar los encargos con el nombre del coche, el nombre del cliente y el nombre de la ciudad, pero unicamente cuando sean de Barcelona*/
+	SELECT e.idencargos, co.modelo, cl.nombre, cl.ciudad,e.cantidad, e.fecha FROM encargos e INNER JOIN coches co ON e.idcoches = co.idcoches INNER JOIN clientes cl ON e.idclientes = cl.idclientes WHERE e.idclientes IN(SELECT idclientes FROM clientes WHERE ciudad = 'Barcelona'); 
