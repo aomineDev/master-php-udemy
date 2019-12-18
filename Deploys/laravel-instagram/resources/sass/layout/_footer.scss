@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+    flex-wrap: wrap;
+    p {
+        margin-left: 4px;
+        margin-right: 4px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: .8rem;
+    }
+    &-copy {
+        font-size: .8rem;
+        color: #999;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}

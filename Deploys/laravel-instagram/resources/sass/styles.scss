@@ -1,0 +1,23 @@
+// Lib
+@import 'lib/base-colors';
+@import 'lib/variables';
+@import 'priority/loading';
+@import 'lib/mixins-media';
+@import 'lib/placeholders';
+
+// Global
+@import 'global/class';
+@import 'global/general';
+@import 'global/fonts';
+
+// Components
+@import 'components/form';
+@import 'components/social';
+
+// Layout
+@import 'layout/nav';
+@import 'layout/login';
+@import 'layout/imgDetail';
+@import 'layout/perfil';
+@import 'layout/users';
+@import 'layout/footer';

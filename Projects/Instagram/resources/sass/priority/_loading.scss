@@ -1,0 +1,73 @@
+.ringLoad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+    height: 100%;
+    background-color: $light;
+	transition: opacity 1s;
+}
+
+.instagram-logo {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 8px solid $instagram;
+    border-radius:28px;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+    &:before {
+        left: 50%;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        border: 8px solid $instagram;
+    }
+    &:after {
+        left: 82.5%;
+        top: 17.5%;
+        width: 12px;
+        height: 12px;
+        background-color: $instagram;
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 110;
+	width: 100%;
+	height: 3px;
+	transition: 1s;
+}
+
+/* ProgressBar */
+.nprogress {
+	pointer-events: none;
+	.bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+        height: 3px;
+        background-image: radial-gradient(90deg, $red, $blue);
+		animation: animateBackground 5s linear infinite;
+	}
+}
+
+@keyframes animateBackground {
+	50% {
+		filter: hue-rotate(360deg);
+	}
+}

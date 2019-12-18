@@ -1,0 +1,9 @@
+.form {
+    &-avatar {
+        height: 100px;
+    }
+    &-textarea {
+        resize: none;
+        @extend %scroll-content;
+    }
+}

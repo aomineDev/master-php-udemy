@@ -1,0 +1,16 @@
+.social {
+    &-interactive,
+    &-like-count {
+        font-size: 1.2rem;
+    }
+    &-interactive {
+        color: #212121;
+        &:hover {
+            color: #000;
+        }
+        &:active {
+            transform: scale(1.2);
+        }
+    }
+}
+

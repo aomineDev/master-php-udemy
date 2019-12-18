@@ -1,0 +1,15 @@
+.avatar {
+    width: 25px;
+    height: 25px;
+    &-img {
+        @extend %avatar-img;
+    }
+}
+.is-invalid::placeholder {
+    color: red;
+}
+
+.tl-0 {
+    top: 0;
+    left: 0;
+}

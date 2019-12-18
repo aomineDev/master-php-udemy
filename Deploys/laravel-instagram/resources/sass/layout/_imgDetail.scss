@@ -1,0 +1,44 @@
+.imgDetail {
+    &-comments {
+        max-height: 250px;
+        overflow-y: auto;
+        @extend %scroll-none;
+        &-comment {
+            position: relative;
+        }
+        &-delete {
+            position: absolute;
+            right: 0;
+            opacity: 0;
+            i {
+                color: #333;
+            }
+        }
+        &-comment:hover &-delete {
+            opacity: 1;
+        }
+    }
+    &-actions {
+        &-links {
+            font-size: 1.2rem;
+            color: #212121;
+            &:hover {
+                color: #000;
+            }
+            &:active {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &-form {
+        &-input,
+        &-btn {
+        border: none;
+        outline: none;
+        }
+        &-btn {
+            cursor: pointer;
+        }
+    }
+
+}
